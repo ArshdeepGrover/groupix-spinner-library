@@ -1,6 +1,17 @@
 {
-  "name": "ngx-spinner-library",
-  "version": "0.0.0",
+  "name": "@groupix/groupix-spinner",
+  "version": "0.0.2",
+  "description": "A simple Angular spinner component",
+  "author": "Arshdeep Singh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/groupix-spinner.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +19,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
@@ -23,6 +34,7 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^18.2.16",
     "@angular/cli": "^18.2.14",
     "@angular/compiler-cli": "^18.2.0",
     "@types/jasmine": "~5.1.0",
@@ -32,6 +44,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.2.0",
     "typescript": "~5.5.2"
   }
 }

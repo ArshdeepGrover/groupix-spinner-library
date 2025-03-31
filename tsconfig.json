@@ -11,6 +11,11 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
+    "paths": {
+      "groupix-spinner": [
+        "./dist/groupix-spinner"
+      ]
+    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
