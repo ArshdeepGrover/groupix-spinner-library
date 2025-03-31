@@ -1,12 +1,12 @@
 {
   "name": "@groupix/groupix-spinner",
-  "version": "0.0.2",
-  "description": "A simple Angular spinner component",
-  "author": "Arshdeep Singh",
+  "version": "0.0.3",
+  "description": "A lightweight Angular spinner library for loading states",
+  "author": "Arshdeep Singh <arsh199820@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/groupix-spinner.git"
+    "url": "https://github.com/ArshdeepGrover/groupix-spinner-library.git"
   },
   "peerDependencies": {
     "@angular/common": "^18.0.0",

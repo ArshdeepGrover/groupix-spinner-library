@@ -1,6 +1,22 @@
 {
   "name": "@groupix/groupix-spinner",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "description": "A lightweight Angular spinner library for loading states",
+  "keywords": [
+    "angular",
+    "spinner",
+    "loader"
+  ],
+  "homepage": "https://github.com/ArshdeepGrover/groupix-spinner-library#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArshdeepGrover/groupix-spinner-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArshdeepGrover/groupix-spinner-library/issues"
+  },
+  "license": "MIT",
+  "author": "Arshdeep Singh <arsh199820@gmail.com>",
   "peerDependencies": {
     "@angular/common": "^18.2.0",
     "@angular/core": "^18.2.0"
@@ -8,5 +24,5 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+   "sideEffects": false
 }
