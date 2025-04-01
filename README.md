@@ -18,7 +18,7 @@ npm install @groupix/groupix-spinner --save
 
 ---  
 
-## 📦 Usage  
+## 📞 Usage  
 
 ### 1️⃣ Import the module in `app.module.ts`  
 
@@ -43,7 +43,7 @@ export class AppModule { }
 
 ## 🎮 Live Demo  
 
-Check out the live demo: [Groupix Spinner Demo](#https://groupix-spinner.vercel.app/)
+Check out the live demo: [Groupix Spinner Demo](https://groupix-spinner.vercel.app/)  
 
 ---  
 
@@ -65,4 +65,4 @@ We welcome contributions! Feel free to submit a pull request or report issues.
 ---  
 
 ## 📝 License  
-This project is licensed under the **MIT License**.  
+This project is licensed under the **MIT License**.
