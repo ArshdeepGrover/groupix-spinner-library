@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'groupix-spinner',
   template: ` <div class="loader-container">
-    <span class="sr-only">Loading...</span>
-
     <div class="ball ball-1"></div>
     <div class="ball ball-2"></div>
     <div class="ball ball-3"></div>
