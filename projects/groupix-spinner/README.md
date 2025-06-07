@@ -57,11 +57,8 @@ import { GroupixSpinnerModule } from '@groupix/groupix-spinner';
 <groupix-spinner [ballCount]="5"></groupix-spinner>
 ```
 
-## ⚙️ API
-
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| ballCount | number | 3 | Number of balls (min: 3, max: 9) |
+## 🎮 Live Demo
+Check out the live demo: [Groupix Spinner Demo](https://groupix-spinner.vercel.app/)   
 
 ## 🎬 Examples
 
