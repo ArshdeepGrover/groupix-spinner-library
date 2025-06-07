@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'groupix-spinner',
   template: ` <div class="loader-container">
-    <div class="ball ball-1"></div>
-    <div class="ball ball-2"></div>
-    <div class="ball ball-3"></div>
+    <div class="ball ball-1" [ngStyle]="ball1Style"></div>
+    <div class="ball ball-2" [ngStyle]="ball2Style"></div>
+    <div class="ball ball-3" [ngStyle]="ball3Style"></div>
   </div>`,
   styles: `
   .loader-container {
@@ -17,12 +17,8 @@ import { Component } from '@angular/core';
 }
 
 .ball {
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   animation: bounce 1.5s infinite ease-in-out;
-  transition: transform 0.3s ease-in-out;
 }
 
 .ball-1 {
@@ -39,10 +35,6 @@ import { Component } from '@angular/core';
   background: linear-gradient(to right, #a855f7, #2563eb);
 }
 
-.ball:hover {
-  transform: scale(1.25);
-}
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -53,4 +45,26 @@ import { Component } from '@angular/core';
 }
 `,
 })
-export class GroupixSpinnerComponent {}
+export class GroupixSpinnerComponent implements OnInit {
+  @Input() size: string = '40px';
+  @Input() color!: string;
+
+  ball1Style: any;
+  ball2Style: any;
+  ball3Style: any;
+
+  ngOnInit(): void {
+    const baseStyle = {
+      width: this.size,
+      height: this.size,
+    };
+
+    if (this.color) {
+      (baseStyle as any).background = this.color;
+    }
+
+    this.ball1Style = { ...baseStyle };
+    this.ball2Style = { ...baseStyle };
+    this.ball3Style = { ...baseStyle };
+  }
+}
