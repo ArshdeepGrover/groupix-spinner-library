@@ -46,28 +46,33 @@ export class AppModule {}
 <groupix-spinner></groupix-spinner>
 ```
 
-<!-- 
 ---
+
 ## 🎨 Customization
 
-Modify the styles using CSS:
+You can customize the spinner's appearance using the `size` and `color` input properties.
 
-```css
-groupix-spinner {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 5px solid rgba(0, 0, 0, 0.1);
-  border-top-color: #3498db;
-  animation: spin 1s linear infinite;
-}
+### `size`
+The `size` input allows you to control the width and height of each ball in the spinner. It accepts any valid CSS size string. If not provided, it defaults to `'40px'`.
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-``` -->
+**Example:**
+```html
+<groupix-spinner [size]="'60px'"></groupix-spinner>
+```
+
+### `color`
+The `color` input allows you to set a uniform background color for all balls in the spinner. It accepts any valid CSS color string (e.g., hex codes, color names). If not provided, the default multi-color gradient backgrounds will be used.
+
+**Example:**
+```html
+<groupix-spinner [color]="'#3498db'"></groupix-spinner>
+```
+
+### Combining Inputs
+You can use both inputs together:
+```html
+<groupix-spinner [size]="'50px'" [color]="'green'"></groupix-spinner>
+```
 
 ---
 
