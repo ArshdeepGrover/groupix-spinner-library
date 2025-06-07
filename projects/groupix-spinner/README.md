@@ -2,10 +2,10 @@
 
 <div align="center">
   
-![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)
+![NPM Version](https://img.shields.io/npm/v/%40groupix%2Fgroupix-spinner)
 ![NPM Type Definitions](https://img.shields.io/npm/types/%40groupix%2Fgroupix-spinner?color=green&label=Type%20Definitions)  
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Bundle Size](https://img.shields.io/bundlephobia/min/%40groupix%2Fgroupix-spinner?color=red&label=Bundle%20Size)  
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40groupix%2Fgroupix-spinner)
 </div>
 
 A lightweight, customizable spinner component for Angular applications.
