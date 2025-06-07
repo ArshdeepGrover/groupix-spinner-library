@@ -1,11 +1,13 @@
 {
   "name": "@groupix/groupix-spinner",
-  "version": "0.1.1",
-  "description": "A lightweight Angular spinner library for loading states",
+  "version": "1.0.0",
+  "description": "A lightweight Angular spinner library with customizable ball count",
   "keywords": [
     "angular",
     "spinner",
-    "loader"
+    "loader",
+    "loading",
+    "animation"
   ],
   "homepage": "https://github.com/ArshdeepGrover/groupix-spinner-library#readme",
   "repository": {
@@ -24,5 +26,5 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-   "sideEffects": false
+  "sideEffects": false
 }
