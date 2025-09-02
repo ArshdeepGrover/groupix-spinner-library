@@ -12,6 +12,8 @@
 ## 🎯 Features
 ✔️ Easy to integrate  
 ✔️ Lightweight and fast performance  
+✔️ Customizable ball count (3-9 balls)  
+✔️ Multiple size options (sm, m, l, xl, xxl)  
 
 ---
 
@@ -43,7 +45,14 @@ export class AppModule {}
 ### 2️⃣ Add the spinner component to your template  
 
 ```html
+<!-- Basic usage -->
 <groupix-spinner></groupix-spinner>
+
+<!-- With custom properties -->
+<groupix-spinner 
+  [ballCount]="5"
+  size="xl">
+</groupix-spinner>
 ```
 
 <!-- 
@@ -71,6 +80,15 @@ groupix-spinner {
 
 ---
 
+## ⚙️ Configuration Options
+
+| Property | Type | Default | Description |
+|----------|------|---------|-------------|
+| `ballCount` | `number` | `3` | Number of bouncing balls (3-9) |
+| `size` | `'sm' \| 'm' \| 'l' \| 'xl' \| 'xxl'` | `'l'` | Size of the balls (sm=20px, m=30px, l=40px, xl=50px, xxl=60px) |
+
+---
+
 ## 🎮 Live Demo
 
 🚀 Check out the live demo: [Groupix Spinner Demo](https://groupix-spinner.vercel.app/)  
@@ -86,6 +104,26 @@ Use Angular binding:
 <groupix-spinner *ngIf="isLoading"></groupix-spinner>
 <button (click)="isLoading = !isLoading">Toggle Spinner</button>
 ```
+
+### 🔹 How do I customize the spinner appearance?
+You can customize ball count and size:
+
+```html
+<!-- Small spinner with 3 balls -->
+<groupix-spinner 
+  [ballCount]="3"
+  size="sm">
+</groupix-spinner>
+
+<!-- Large spinner with 7 balls -->
+<groupix-spinner 
+  [ballCount]="7"
+  size="xxl">
+</groupix-spinner>
+```
+
+### 🔹 What's the valid range for ball count?
+The ball count must be between 3 and 9. Values outside this range will be automatically clamped.
 
 ---
 
