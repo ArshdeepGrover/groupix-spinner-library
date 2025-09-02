@@ -5,11 +5,12 @@
 ![NPM License](https://img.shields.io/npm/l/%40groupix%2Fgroupix-spinner?color=orange&label=License)  
 ![Bundle Size](https://img.shields.io/bundlephobia/min/%40groupix%2Fgroupix-spinner?color=red&label=Bundle%20Size)  
 
-### ⚡ A lightweight Angular spinner library for seamless loading animations!
+### ⚡ A lightweight Angular spinner library for seamless loading animations
 
 ---
 
 ## 🎯 Features
+
 ✔️ Easy to integrate  
 ✔️ Lightweight and fast performance  
 ✔️ Customizable ball count (3-9 balls)  
@@ -85,7 +86,56 @@ groupix-spinner {
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
 | `ballCount` | `number` | `3` | Number of bouncing balls (3-9) |
-| `size` | `'sm' \| 'm' \| 'l' \| 'xl' \| 'xxl'` | `'l'` | Size of the balls (sm=20px, m=30px, l=40px, xl=50px, xxl=60px) |
+| `size` | `'sm' \| 'm' \| 'l' \| 'xl' \| 'xxl'` | `'l'` | Size of the balls |
+
+---
+
+## 📏 Size Options
+
+Choose the perfect size for your spinner! Each size is optimized for different use cases:
+
+### 🔸 Available Sizes
+
+| Size | Dimensions | Best For | Example |
+|------|------------|----------|---------|
+| `sm` | 20×20px | Small buttons, inline loading | `<groupix-spinner size="sm"></groupix-spinner>` |
+| `m` | 30×30px | Form inputs, compact spaces | `<groupix-spinner size="m"></groupix-spinner>` |
+| `l` | 40×40px | **Default** - General purpose | `<groupix-spinner size="l"></groupix-spinner>` |
+| `xl` | 50×50px | Page loading, prominent areas | `<groupix-spinner size="xl"></groupix-spinner>` |
+| `xxl` | 60×60px | Full-screen loading, hero sections | `<groupix-spinner size="xxl"></groupix-spinner>` |
+
+### 🎨 Size Examples
+
+```html
+<!-- Tiny spinner for buttons -->
+<button [disabled]="loading">
+  <groupix-spinner *ngIf="loading" size="sm" [ballCount]="3"></groupix-spinner>
+  {{ loading ? 'Loading...' : 'Submit' }}
+</button>
+
+<!-- Medium spinner for cards -->
+<div class="card-loading">
+  <groupix-spinner size="m" [ballCount]="5"></groupix-spinner>
+</div>
+
+<!-- Large spinner for page loading -->
+<div class="page-loader">
+  <groupix-spinner size="xl" [ballCount]="7"></groupix-spinner>
+  <p>Loading your content...</p>
+</div>
+
+<!-- Extra large for splash screens -->
+<div class="splash-screen">
+  <groupix-spinner size="xxl" [ballCount]="9"></groupix-spinner>
+</div>
+```
+
+### 💡 Size Tips
+
+- **Responsive Design**: Use CSS media queries to change sizes on different screens
+- **Performance**: Smaller sizes with fewer balls load faster
+- **Accessibility**: Larger sizes are easier to see for users with visual impairments
+- **Context**: Match the spinner size to the content it's loading
 
 ---
 
@@ -98,6 +148,7 @@ groupix-spinner {
 ## ❓ FAQ
 
 ### 🔹 How do I show/hide the spinner dynamically?
+
 Use Angular binding:
 
 ```html
@@ -106,6 +157,7 @@ Use Angular binding:
 ```
 
 ### 🔹 How do I customize the spinner appearance?
+
 You can customize ball count and size:
 
 ```html
@@ -123,6 +175,7 @@ You can customize ball count and size:
 ```
 
 ### 🔹 What's the valid range for ball count?
+
 The ball count must be between 3 and 9. Values outside this range will be automatically clamped.
 
 ---
@@ -130,6 +183,16 @@ The ball count must be between 3 and 9. Values outside this range will be automa
 ## 🤝 Contributing
 
 We ❤️ contributions! If you have any suggestions or want to improve this library, feel free to open an issue or submit a PR.
+
+---
+
+## 👨‍💻 Created by
+
+# **Arshdeep Singh**
+
+📧 <arsh199820@gmail.com>  
+💼 [LinkedIn](https://linkedin.com/in/arshdeepgrover)  
+🌐 [Personal Website](https://arshdeepsingh.info)
 
 ---
 
